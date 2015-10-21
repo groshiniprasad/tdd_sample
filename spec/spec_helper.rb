@@ -1,3 +1,5 @@
-#require_relative '../app/converter'
+require_relative '../app/converter'
 require_relative '../app/ParkingLot'
+#require_relative '../app/Slot'
+#require_relative '../app/Car'
 require 'yaml'

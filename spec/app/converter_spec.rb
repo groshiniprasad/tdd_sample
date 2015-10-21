@@ -36,7 +36,8 @@ describe Converter do
     end
      it 'should return 3 when "III" is entered ' do
       Converter.new.convert_to_numeral("III").should eq 3
-    endbic
+    end
+    
      it 'should return 10 when "X" is entered ' do
       Converter.new.convert_to_numeral("X").should eq 10
     end

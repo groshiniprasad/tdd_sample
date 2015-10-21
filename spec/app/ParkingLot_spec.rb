@@ -7,10 +7,10 @@ describe ParkingLot do
 		 end
 		
 		it 'should return "Parking_Allotment[6]" when 6 is entered' do
-      		ParkingLot.create_Slot(6).should eq "Parking_Allotment[6] "
+      		ParkingLot.new.create_Slot(6).should eq "parking_allotment[5] "
     	end
     	it 'should return "Parking_Allotment[4]" when 4 is entered' do
-      		ParkingLot.new.create_Slot(4).should eq "Parking_Allotment[4]"
+      		ParkingLot.new.create_Slot(4).should eq "parking_allotment[4]"
     	end
     end 
 end

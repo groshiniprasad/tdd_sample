@@ -1,31 +1,38 @@
-Parking_Allotment = []
-class ParkingLot
-	def initialization(Slot,Ticket)	
-		@Slot = Slot
-		@Ticket = Ticket
-	end
-	def create_Slot (number_of_Slot)
-		number_of_Slot.times do | i | 
-		Parking_Allotment[i] = (i == ParkingLot.new(i,i)) => ""
-		end
+parking_allotment = []
+class Car 
+	attr_accessor :registration_number, :color
+	def initialization 
+		@registration_number	=	registration_number
+		@color 					= 	color
+	end 
+end 
+
+class Slot 
+	attr_accessor :slot_number, :ticket
+	def initialization 
+		@slot_number	= 	slot_number
+		@ticket			= 	ticket
 	end
 end
 
-class Car
-	def Initialization(registration_number,color)
-		@registration_number = registration_number
-		@color = color
+class ParkingLot 
+	#attr_reader :slot ==100
+	def initialization
+		@slot = Slot.new
 	end 
-	def Car_Enters(registration_number,color)
-		Parking_Allotment.each do |k,v|
-			v = Car.new(registration_number,color) if (my_key = k && v == “”)
-			break
+
+	def create_Slot(number_of_slots)
+		if (number_of_slots <= slot)
+			number_of_slots.times do |i|
+				parking_allotment[i] = {(Slot.new(i,i)) => ""}	
+			end 
+		else
+			Puts "Invalid Input"
 		end
 	end
 end 
-		
 
 
-	
+
 
 
